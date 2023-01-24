@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4C95C4"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        style="@android:style/TextAppearance.Material.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:text="BMI Calculator"
+        android:textStyle="bold"
+        android:textColor="#fff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            style="@android:style/TextAppearance.Material.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <NumberPicker
+            android:id="@+id/heightPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:backgroundTint="#fff" />
+
+        <TextView
+            style="@android:style/TextAppearance.Material.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cm"
+            android:textStyle="bold"
+            android:textColor="#fff" />
+
+        <TextView
+            style="@android:style/TextAppearance.Material.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Weight"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <NumberPicker
+            android:id="@+id/weightPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:backgroundTint="#fff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kg"
+            android:textStyle="bold"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultsTV"
+        style="@android:style/TextAppearance.Material.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/healthyTV"
+        style="@android:style/TextAppearance.Material.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:padding="10dp"
+        android:textColor="#fff" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="247dp"
+        android:layout_height="180dp"
+        app:srcCompat="@drawable/imc" />
+
+</LinearLayout>
+
+
+
